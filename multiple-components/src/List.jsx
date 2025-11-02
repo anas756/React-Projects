@@ -15,7 +15,7 @@ export default function List (props) {
                 <tr key={index}>
                   <td style={{
                     textDecoration:
-                      t.status === "Fait" ? "line-through" : "none",
+                      t.status === "Annulée" ? "line-through" : "none",
                     color:
                       t.status === "Annulée" ? "gray" : t.status === "Fait" ? "green" : "black",
                   }}
