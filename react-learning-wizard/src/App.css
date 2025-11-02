@@ -1,0 +1,81 @@
+.body {
+  background-color: #1e1e1e;
+  color: white;
+  width: 400px;
+  margin: 35px auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.number {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background-color: transparent;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.number.active {
+  background-color: #7950f2;
+  border-color: #7950f2;
+  color: white;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.navigation button {
+  background-color: #7950f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.navigation button:hover {
+  background-color: #6840cc;
+}
+
+.navigation button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  user-select: none;
+  transition: 0.2s;
+}
+
+.close-btn:hover {
+  color: #7950f2;
+}
